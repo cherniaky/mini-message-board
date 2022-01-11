@@ -1,0 +1,11 @@
+<h1 class="block text-center mb-3">{{title}}</h1>
+<p><a href="/new"> Add a message</a></p>
+<ul class="list-group">
+  {{#each messages}}
+    <li class="list-group-item list-group-item-action d-flex flex-column">
+       <b> {{this.text}}</b>
+        from {{this.user}}
+    </li>
+  {{/each}}
+</ul>
+</ul>
